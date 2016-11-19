@@ -1,0 +1,35 @@
+test: Creature.o Barbarian.o HarryPotter.o Medusa.o BabaYaga.o BlueMen.o validate.o menu.o game.o main.o
+	g++ -std=c++0x Creature.o Barbarian.o HarryPotter.o Medusa.o BabaYaga.o BlueMen.o validate.o menu.o game.o main.o -o test
+
+Creature.o: Creature.hpp Creature.cpp
+	g++ -c Creature.cpp 
+
+Barbarian.o: Barbarian.hpp Barbarian.cpp
+	g++ -c Barbarian.cpp
+
+HarryPotter.o: HarryPotter.hpp HarryPotter.cpp
+	g++ -c HarryPotter.cpp
+
+Medusa.o: Medusa.hpp Medusa.cpp
+	g++ -c Medusa.cpp
+
+BabaYaga.o: BabaYaga.hpp BabaYaga.cpp
+	g++ -c BabaYaga.cpp
+
+BlueMen.o: BlueMen.hpp BlueMen.cpp
+	g++ -c BlueMen.cpp
+
+validate.o: validate.hpp validate.cpp
+	g++ -c validate.cpp
+
+menu.o: menu.hpp menu.cpp
+	g++ -c menu.cpp
+
+game.o: game.hpp game.cpp
+	g++ -c game.cpp
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+clean:
+	rm *o test
