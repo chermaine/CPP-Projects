@@ -1,4 +1,4 @@
-# cs162-projects
+# Projects written in C++
 Projects/Assignments from Introduction to Computer Science II
 
 Assignment 1 - Simulation of Langton's Ants
